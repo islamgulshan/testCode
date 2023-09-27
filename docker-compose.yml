@@ -1,0 +1,35 @@
+version: "2"
+services:
+  postgres:
+    image: 'postgres'
+    volumes:
+      - postgres-data:/var/lib/postgresql/data/
+    container_name: 'dmg-db'
+    restart: 'always'
+    env_file:
+      - _database.env
+    ports:
+      - '5432:5432'
+    networks:
+      - rns-admin-backend
+
+  rns-admin-backend:
+    build: .
+    image: rns-admin-backend:latest
+    container_name: rns-admin-backend
+    depends_on:
+      - postgres
+
+    volumes:
+      - ./src:/app/src
+      - .env:/app/.env
+    ports:
+      - '7876:4000'
+    networks:
+      - rns-admin-backend
+
+networks:
+  rns-admin-backend:
+volumes:
+  postgres-data:
+ 

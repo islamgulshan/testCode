@@ -1,0 +1,121 @@
+[
+  {
+    "permissionId": 1,
+    "title": "Job Openings",
+    "accessName": "Add",
+    "path": "job",
+    "method": "post"
+  },
+  {
+    "permissionId": 2,
+    "title": "Job Openings",
+    "accessName": "Edit",
+    "path": "job/:id",
+    "method": "put"
+  },
+  {
+    "permissionId": 3,
+    "title": "Job Openings",
+    "accessName": "View",
+    "path": "job",
+    "method": "get"
+  },
+  {
+    "permissionId": 4,
+    "title": "Job Applications",
+    "accessName": "View",
+    "path": "application",
+    "method": "get"
+  },
+  {
+    "permissionId": 5,
+    "title": "Job Applications",
+    "accessName": "DownloadCV",
+    "path": "application/cv/:id",
+    "method": "get"
+  },
+  {
+    "permissionId": 6,
+    "title": "Contacts",
+    "accessName": "View",
+    "path": "contacts/contact_list",
+    "method": "get"
+  },
+  {
+    "permissionId": 7,
+    "title": "Contacts",
+    "accessName": "ViewById",
+    "path": "contacts/:id",
+    "method": "get"
+  },
+  {
+    "permissionId": 8,
+    "title": "Team",
+    "accessName": "Add",
+    "path": "teams/add",
+    "method": "post"
+  },
+  {
+    "permissionId": 9,
+    "title": "Team",
+    "accessName": "Edit",
+    "path": "teams/:id",
+    "method": "patch"
+  },
+  {
+    "permissionId": 10,
+    "title": "Team",
+    "accessName": "View",
+    "path": "teams/teams_list",
+    "method": "get"
+  },
+  {
+    "permissionId": 11,
+    "title": "Team",
+    "accessName": "ViewById",
+    "path": "teams/:id",
+    "method": "get"
+  },
+  {
+    "permissionId": 12,
+    "title": "Staff Management",
+    "accessName": "Add",
+    "path": "admin/add_staff_member",
+    "method": "post"
+  },
+  {
+    "permissionId": 13,
+    "title": "Staff Management",
+    "accessName": "Edit",
+    "path": "admin/:id",
+    "method": "patch"
+  },
+  {
+    "permissionId": 14,
+    "title": "Staff Management",
+    "accessName": "View",
+    "path": "admin/staff_list",
+    "method": "get"
+  },
+  {
+    "permissionId": 15,
+    "title": "Staff Management",
+    "accessName": "ViewById",
+    "path": "admin/detail/:id",
+    "method": "get"
+  },
+  {
+    "permissionId": 16,
+    "title": "Staff Permissions",
+    "accessName": "Edit",
+    "path": "admin/role_permission/:roleId",
+    "method": "put"
+  },
+  {
+    "permissionId": 17,
+    "title": "Staff Permissions",
+    "accessName": "View",
+    "path": "admin/permissions",
+    "method": "get"
+  }
+]
